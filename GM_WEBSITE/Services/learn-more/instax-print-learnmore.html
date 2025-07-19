@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More</title>
+    <link rel="stylesheet" href="instax-print-learnmorestyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../..//GMLOGOBLACKVER.png" alt="Logo">
+        </div>
+        <ul class="nav-list">
+            <li><a href="../..//homepage.html">HOME</a></li>
+            <li><a href="../..//location/location.html">Location</a></li>
+            <li><a href="../../Contactus/contactus.html">Contact</a></li>
+            <li><a href="../../Services/services.html">Services</a></li>
+            <li><a href="../..//reviews/reviews.html">Reviews</a></li>
+        </ul>
+
+       <!-- Burger Icon -->
+       <a class="burger" onclick="toggleSidebar()"><i class='bx bx-menu bx-md'></i></a>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="../..//homepage.html">HOME</a>
+        <a href="../..//location/location.html">LOCATION</a>
+        <a href="../..//Contactus/contactus.html">CONTACT</a>
+        <a href="../../Services/services.html" class="services">SERVICES</a>
+        <a href="../..//reviews/reviews.html" class="reviews">REVIEWS</a>
+
+    </div>
+
+    <section class="about-us">
+        <div class="main-img">
+            <img src="./images/instax4.png" alt=""> 
+        </div>
+
+        <div class="text">
+            <h4>Instax Printing</h4>
+            <h1>Learn More About Our Instax Printing</h1>
+            <hr>
+            <p>Capture your memories in style with our Instax Printing packages, perfect for adding a personal touch to your photos. 
+                Choose from three unique formats that suit your needs:</p>
+
+            <div class="last-text">
+                <div class="text1">
+                    <h3>Instax Mini</h3>
+                    <ul>
+                        <li>Outer Outer Dimensions: 2.1" x 3.4"</li>
+                        <li>Photo Dimensions: 1.8" x 2.4""</li>
+                        <li>Aspect Ratio: 3:4</li>
+                    </ul>
+                    <p>Ideal for wallet-sized photos, the Instax Mini format is compact and versatile—perfect for small albums, 
+                        creative scrapbooks, or sharing with friends.</p>
+
+                        <h3>Instax Wide</h3>
+                    <ul>
+                        <li>Outer Outer Dimensions: 4" x 3.4"</li>
+                        <li>Photo Dimensions: 3.6" x 2.4""</li>
+                        <li>Aspect Ratio: 7:5</li>
+                    </ul>
+                    <p>Go big with Instax Wide! These prints offer more space to fit group photos, 
+                        scenic landscapes, or anything that deserves a broader view.</p>
+
+                        <h3>Instax Square</h3>
+                        <ul>
+                            <li>Outer Outer Dimensions: 2.8" x 3.4"</li>
+                            <li>Photo Dimensions: 2.4" x 2.4""</li>
+                            <li>Aspect Ratio: 1:1</li>
+                        </ul>
+                        <p>For a modern touch, Instax Square gives you the perfect frame for symmetrical and balanced 
+                            shots great for portraits and Instagram-worthy moments.</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Toggle Sidebar
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('show');
+        }
+
+        // If the window is larger the sidebar automatically disabled
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 780) {
+                document.querySelector('.sidebar').classList.remove('show');
+            }
+        });
+    </script>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>FOLLOW US</h2>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/profile.php?id=100071209760725" target="_blank"><img src="../..//SOCIAL MEDIA ICON/facebook.png" class="footer-icon" alt="Facebook"></a>
+                <a href="#"><img src="../..//SOCIAL MEDIA ICON/instagram.png" class="footer-icon" alt="Instagram"></a>
+                <a href="#"><img src="../..//SOCIAL MEDIA ICON/twitter.png" class="footer-icon" alt="Twitter"></a>
+                <a href="#"><img src="../..//SOCIAL MEDIA ICON/youtube.png" class="footer-icon" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h2>OTHER LINKS</h2>
+            <a href="../../Aboutus/aboutus.html">ABOUT US</a>
+            <a href="../../faq/faq.html">FAQS</a>
+            <a href="../../privacy-policy/privacy-policy.html">PRIVACY POLICY</a>
+            <a href="../../TermsandConditions/termsandconditons.html">TERM AND CONDITIONS</a>
+        </div>
+    </div>
+    <div class="footer-text">
+        <p>Copyright © 2024 G.M CAMERA STUDIO PH. All Right Reserved.</p>
+    </div>
+</footer>
+</html>

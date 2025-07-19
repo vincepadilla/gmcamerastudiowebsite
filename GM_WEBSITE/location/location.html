@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Location</title>
+    <link rel="stylesheet" href="locationstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../GMLOGOBLACKVER.png" alt="Logo">
+        </div>
+        <ul class="nav-list">
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="../Contactus/contactus.html">Contact</a></li>
+            <li><a href="../Services/services.html">Services</a></li>
+            <li><a href="../reviews/reviews.html">Reviews</a></li>
+        </ul>
+
+       <!-- Burger Icon -->
+       <a class="burger" onclick="toggleSidebar()"><i class='bx bx-menu bx-md'></i></a>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="../homepage.html">HOME</a>
+        <a href="../location/location.html">LOCATION</a>
+        <a href="../Contactus/contactus.html">CONTACT</a>
+        <a href="../Services/services.html" class="services">SERVICES</a>
+        <a href="../reviews/reviews.html">REVIEWS</a>
+
+    </div>
+
+    <section>
+        <div class="box">
+            <h1>Our Location</h1>
+            <p>Our location is at the heart of vibrant Taguig City, specifically home to G.M Camera Studio. 
+                Surrounded by bustling streets and convenient access points, we are situated in a lively area known for 
+                its accessibility and charm. Whether you're visiting for our premium services or exploring the neighborhood, 
+                our studio offers a welcoming and professional environment tailored to your needs.</p>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.889448970975!2d121.0610439748717!3d14.548313985931884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c88e40341003%3A0x8bac78954f338e4a!2sGm%20Camera%20Studio!5e0!3m2!1sen!2sph!4v1732411851199!5m2!1sen!2sph" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <script>
+        // Toggle Sidebar
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('show');
+        }
+
+        // If the window is larger the sidebar automatically disabled
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 780) {
+                document.querySelector('.sidebar').classList.remove('show');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

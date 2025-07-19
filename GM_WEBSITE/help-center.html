@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - Photography Service</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: url(bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            padding: 0;
+        }
+
+        .help-center {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #f5f5f5;
+            text-transform: uppercase;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: #cccccc;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            border: 1px solid #444444;
+            border-radius: 5px;
+            background-color: #222222;
+            color: #ffffff;
+            font-size: 1em;
+            
+        }
+
+        /* Topics Section */
+        .topics-section {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .topic {
+            flex: 1 1 calc(100% - 20px);
+            max-width: calc(50% - 20px);
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+            border: 2px solid white;
+        }
+
+        .topic:hover {
+            background-color: #2a2a2a;
+        }
+
+        .topic-title {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #e0e0e0;
+        }
+
+        .topic-description {
+            font-size: 1em;
+            color: #b3b3b3;
+        }
+
+        @media (max-width: 600px) {
+            .topic {
+                max-width: 100%;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <div class="help-center">
+        <header class="header">
+            <h1>Help Center</h1>
+            <p>Need assistance with our photography service?</p>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for help..." />
+        </div>
+
+        <div class="topics-section">
+            <div class="topic">
+                <h3 class="topic-title">How to Upload Your Photos</h3>
+                <p class="topic-description">Learn how to upload photos for editing or ordering prints.</p>
+            </div>
+            <div class="topic">
+                <h3 class="topic-title">Pricing and Packages</h3>
+                <p class="topic-description">Find details about our pricing and package options.</p>
+            </div>
+            <div class="topic">
+                <h3 class="topic-title">Photo Quality Guidelines</h3>
+                <p class="topic-description">Ensure your photos meet quality standards for the best results.</p>
+            </div>
+            <div class="topic">
+                <h3 class="topic-title">Contact Support</h3>
+                <p class="topic-description">Reach out to our team for any inquiries or issues.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; Gm Studio | Help Center</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const topics = document.querySelectorAll(".topic");
+
+            topics.forEach(topic => {
+                topic.addEventListener("click", () => {
+                    alert(`You selected: ${topic.querySelector(".topic-title").innerText}`);
+                });
+            });
+
+            const searchInput = document.getElementById("search");
+            searchInput.addEventListener("input", () => {
+                const query = searchInput.value.toLowerCase();
+                topics.forEach(topic => {
+                    const title = topic.querySelector(".topic-title").innerText.toLowerCase();
+                    const description = topic.querySelector(".topic-description").innerText.toLowerCase();
+                    if (title.includes(query) || description.includes(query)) {
+                        topic.style.display = "block";
+                    } else {
+                        topic.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

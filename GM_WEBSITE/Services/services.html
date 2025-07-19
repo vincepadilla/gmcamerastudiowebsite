@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="servicestyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="sidebar">
+            <a href="..//homepage.html"><img src="..//GMLOGOBLACKVER.png" class="logo"></a>
+                <h2>SERVICES</h2>
+                    <div class="filter-category">
+                        <button class="filter-btn" onclick="filterSelection('all-items')"> All</button>
+                        <button class="filter-btn" onclick="filterSelection('id')"> Rush ID</button>
+                        <button class="filter-btn" onclick="filterSelection('tarpulin')"> Tarpaulin</button>
+                        <button class="filter-btn" onclick="filterSelection('photo-restoration')"> Photo Restoration</button>
+                        <button class="filter-btn" onclick="filterSelection('print')"> Print</button>
+                        <button class="filter-btn" onclick="filterSelection('instax')"> Instax Printing</button>
+
+                        <button class="filter-btn" onclick="filterSelection('photo-studio')"> Photo Studio</button>
+                    </div>            
+        </div>
+    </nav>
+
+    <div class="navbar">
+        <a href="..//homepage.html"><img src="..//GMLOGOBLACKVER.png" class="nav-logo"></a>
+        <div class="nav-filter-category">
+            <button class="filter-btn" onclick="filterSelection('all-items')"> All</button>
+            <button class="filter-btn" onclick="filterSelection('id')"> ID</button>
+            <button class="filter-btn" onclick="filterSelection('tarpulin')"> Tarpaulin</button>
+            <button class="filter-btn" onclick="filterSelection('photo-restoration')"> Photo Restoration</button>
+            <button class="filter-btn" onclick="filterSelection('print')"> Print</button>
+            <button class="filter-btn" onclick="filterSelection('instax')"> Instax Printing</button>
+
+            <button class="filter-btn" onclick="filterSelection('photo-studio')"> Photo Studio</button>
+
+        </div>
+        <!-- Burger Icon -->
+    </div>
+
+    <a class="burger-menu"><i class='bx bx-menu bx-md'></i></a>
+
+    <div class="content-area">
+        <!-- Card Container for Filterable Content -->
+
+            <!-- ID Packages Banner -->
+            <div class="title-text filter-item all-items">
+                <h3>Service Offered</h3>
+            </div>
+
+            <!-- ID Packages Banner -->
+            <div class="title-text filter-item id">
+                <h3>Id Packages</h3>
+            </div>
+
+            <!-- Tarpaulin Banner -->
+            <div class="title-text filter-item tarpulin">
+                <h3>Tarpaulin</h3>
+            </div>
+
+            <!-- Restoration Banner -->
+            <div class="title-text filter-item photo-restoration">
+                <h3>Photo Restoration</h3>
+            </div>
+
+             <!-- Print Banner -->
+             <div class="title-text filter-item print">
+                <h3>Print Services</h3>
+            </div>
+
+            <!-- Instax Banner -->
+            <div class="title-text filter-item instax">
+                <h3>Instax Print</h3>
+            </div>
+
+             <!-- Photo Studio Banner -->
+             <div class="title-text filter-item photo-studio">
+                <h3>Photo Studio</h3>
+            </div>
+
+            
+
+        <div class="card-container">
+
+            <!-- All -->
+            <div class="all-card filter-item all-items">
+                <img src="../images/ID Cover.jpg" alt="image1">
+                <div class="card-content">
+                    <h3>Rush ID</h3>
+                    <a href="./learn-more/ID-learnmore.html">Learn more <span>&rarr;</span></a> 
+                </div>
+            </div>
+
+            <div class="all-card filter-item all-items">
+                <img src="..//images/printall.png" alt="image2">
+                <div class="card-content">
+                    <h3>Print & Xerox</h3>
+                    <a href="./learn-more/print-learnmore.html">Learn more <span>&rarr;</span></a> 
+                </div>
+            </div>
+
+            <div class="all-card filter-item all-items">
+                <img src="..//images/tarpuline.png" alt="image3">
+                <div class="card-content">
+                    <h3>Tarpaulin Printing</h3>
+                    <a href="./learn-more/tarpaulin-learnmore.html">Learn more <span>&rarr;</span></a> 
+                </div>
+            </div>
+
+            <div class="all-card filter-item all-items">
+                <img src="..//images/restoration.png" alt="image4">
+                <div class="card-content">
+                    <h3>Photo Restoration</h3>
+                    <a href="./learn-more/photo-restoration-learnmore.html">Learn more <span>&rarr;</span></a> 
+                </div>
+            </div>
+
+            <div class="all-card filter-item all-items">
+                <img src="..//images/Photo-Studio Cover.png" alt="image5">
+                <div class="card-content">
+                    <h3>Photo Studio</h3>
+                    <a href="./learn-more/photo-studio-learnmore.html">Learn more <span>&rarr;</span></a> 
+                </div>
+            </div>
+
+            <div class="all-card filter-item all-items">
+                <img src="..//images/laminate.png" alt="image6">
+                <div class="card-content">
+                    <h3>Lamination</h3>
+                    <a href="./learn-more/lamination-learnmore.html">Learn more <span>&rarr;</span></a> 
+                </div>
+            </div>
+
+            <div class="all-card filter-item all-items">
+                <img src="..//images/instax.png" alt="image7">
+                <div class="card-content">
+                    <h3>Instax Print</h3>
+                    <a href="./learn-more/instax-print-learnmore.html">Learn more <span>&rarr;</span></a> 
+                </div>
+            </div>
+
+            <!-- ID Services -->
+            <div class="card filter-item id">
+                <img src="./ids/g1.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G1</h3>
+                    <p>2 x 2 - 4pcs: ₱70.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g2.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G2</h3>
+                    <p>1 x 1 - 8pcs: ₱50.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g3.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G3</h3>
+                    <p>1.5 x 1.5 - 5pcs ₱80.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g4.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G4</h3>
+                    <p>Passport Size - 5pcs ₱80.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g5.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G5</h3>
+                    <p>2 x 2 - 6pcs ₱100.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g6.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G6</h3>
+                    <p>2 x 2 - 2pcs & 1 x 1 - 3pcs ₱60.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g7.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G7</h3>
+                    <p>2 x 2 - 3pcs & 1 x 1 - 3pcs ₱80.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g8.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G8</h3>
+                    <p>2 x 2 - 4pcs & 1 x 1 - 4pcs ₱100.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g9.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G9</h3>
+                    <p>2 x 2 - 4pcs & 1 x 1 - 7pcs ₱120.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g10.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G10</h3>
+                    <p>2 x 2 - 8pcs & 1 x 1 - 7pcs ₱190.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g11.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G11</h3>
+                    <p>Passport Size - 5pcs & 2 x 2 - 4pcs & 1 x 1 - 7pcs ₱190.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="./ids/g12.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package: G12</h3>
+                    <p>Passport Size - 5pcs & 2 x 2 - 4pcs ₱140.00</p>
+                </div>
+            </div>
+            
+
+            <!-- Tarpulin -->
+            <div class="tarpaulin-card filter-item tarpulin">
+                <img src="./tarpaulin/tarpaulin images.png" alt="Studio Services">
+                <div class="card-content">
+                    
+                    <p>Tarpaulin Start at ₱150.00</p>
+                </div>
+            </div>
+
+            <!-- Photo Restoration -->
+            <div class="restoration-card filter-item photo-restoration">
+                <img src="./restoration/restoration.png" alt="Photo Restoration">
+                <div class="card-content">
+                    
+                    <p>Restoration Starts at ₱350 it Depends of the damage of the photo's</p>
+                </div>
+            </div>
+
+            <!-- Print -->
+            <div class="card filter-item print">
+                <img src="./print/print.png" alt="Print-Xerox">
+                <div class="card-content">
+                    <h3>Documents</h3>
+                    <p>Documents Starts at ₱3.00 it Depends if the documents are colored</p>
+                </div>
+            </div>
+
+            <div class="card filter-item print">
+                <img src="./print/brochure.png" alt="Print-Xerox">
+                <div class="card-content">
+                    <h3>Brochure</h3>
+                    <p>Brochure Starts at ₱45.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item print">
+                <img src="./print/certificate.png" alt="Print-Xerox">
+                <div class="card-content">
+                    <h3>certificate</h3>
+                    <p>Certificate Starts at ₱40.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item print">
+                <img src="./print/calling card.png" alt="Print-Xerox">
+                <div class="card-content">
+                    <h3>Calling Card</h3>
+                    <p>Calling Card Starts at ₱400.00 per box</p>
+                </div>
+            </div>
+
+            <!-- Photo Studio -->
+            <div class="card-studio filter-item photo-studio">
+                <img src="./baby-studio/babyedit.png" alt="Photo-Studio">
+            </div>
+
+            <div class="instruction-container filter-item photo-studio">
+                <div class="Inclusions-card">
+                    <h3>Baby Studio</h3>
+                    <p>Inclusions for Baby Package:</p>
+                    <ul>
+                        <li>No Printed Photos</li>
+                        <li>10 Shots Edited</li>
+                        <li>No props</li>
+                        <li>You can provide your own props</li>
+                    </ul>
+                    <h4>Starts at ₱600</h4>
+                </div>
+            </div>
+
+            <div class="card-studio filter-item photo-studio">
+                <img src="./graduation/gradpicedit.png" alt="Photo-Studio">
+            </div>
+
+            <div class="instruction-container filter-item photo-studio">
+                <div class="Inclusions-card">
+                    <h3>Graduation Studio</h3>
+                    <p>Inclusions for Graduation Package:</p>
+                    <ul>
+                        <li>3 Shots</li>
+                        <li>Free Use of Toga</li>
+                        <li>8r Print with picture Frame</li>
+                        <li>Softcopy of 3 shots</li>
+                        <li>2 Pcs Wallet Size</li>
+                    </ul>
+                    <h4>Starts at ₱680</h4>
+                </div>
+            </div>
+
+
+            <div class="card-studio filter-item photo-studio">
+                <img src="./couple/couple2.png" alt="Photo-Studio">
+            </div>
+
+            <div class="instruction-container filter-item photo-studio">
+                <div class="Inclusions-card">
+                    <h3>Couple Studio</h3>
+                    <p>Inclusions for Couple Package:</p>
+                    <ul>
+                        <li>3 Shots Edited</li>
+                    </ul>
+                    <h4>Starts at ₱500</h4>
+                </div>
+            </div>
+
+            <div class="card-studio filter-item photo-studio">
+                <img src="./family/family2.png" alt="Photo-Studio">
+            </div>
+
+            <div class="instruction-container filter-item photo-studio">
+                <div class="Inclusions-card">
+                    <h3>Family Studio</h3>
+                    <p>Inclusions for Family Package:</p>
+                    <ul>
+                        <li>10 Shots Edited</li>
+                        <li>Print of 1 choice of shots in 8r Shots</li>
+                    </ul>
+                    <h4>Starts at ₱750</h4>
+                </div>
+            </div>
+
+            <!--Instax Printing-->
+            <div class="card filter-item instax">
+                <img src="./instax/instax1.jpg" alt="Print-Xerox">
+                <div class="card-content">
+                    <h3>Instax Mini</h3>
+                    <p>Dimensions: 2.1" x 3.4"(Outer)/1.8" x 2.4"(Photo)(3:4 Aspect Ratio) ₱80.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item instax">
+                <img src="./instax/instax2.jpg" alt="Print-Xerox">
+                <div class="card-content">
+                    <h3>Instax Wide</h3>
+                    <p>Dimensions: 4pcs. WIDE 4" x 3.4"(Outer)/3.6" x 2.4"(7:5 Aspect Ratio) ₱90.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item instax">
+                <img src="./instax/instax3.jpg" alt="Print-Xerox">
+                <div class="card-content">
+                    <h3>Instax Square</h3>
+                    <p>Dimensions: 2.8" x 3.4"(Outer)/2.4" x 2.4"(Photo)(1:1 Aspect Ratio) ₱110.00</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+
+        
+
+    <script>
+        // Filter function
+        function filterSelection(category) {
+            var items = document.getElementsByClassName('filter-item');
+            if (category === 'all') {
+                category = '';
+            }
+            for (let i = 0; i < items.length; i++) {
+                items[i].style.display = items[i].classList.contains(category) ? 'block' : 'none';
+            }
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const filter = urlParams.get('filter');
+        if (filter) {
+            filterSelection(filter);
+        } else {
+            filterSelection('all-items'); // Default to ID if no filter is set
+        }
+
+        // JavaScript for toggling sidebar and burger menu
+            const burgerMenu = document.querySelector('.burger-menu');
+            const navbar = document.querySelector('.navbar'); //change to const to sidebar and .sidebar if you want sidebar
+            const contentArea = document.querySelector('.content-area');
+
+            burgerMenu.addEventListener('click', () => {
+                navbar.classList.toggle('active'); //change the sidebar.classlist if u want
+                burgerMenu.classList.toggle('active');
+                contentArea.classList.toggle('active');
+            });
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const filterId = urlParams.get('filterId');
+
+                if (filterId) {
+                    // Apply the filter logic
+                    console.log("Filter ID:", filterId);
+
+                    // Example: Highlight or display specific content
+                    const filterElement = document.getElementById(filterId);
+                    if (filterElement) {
+                        filterElement.classList.add("active-filter"); // Add a class for styling or logic
+                    }
+                }
+            });
+
+    </script>
+</body>
+</html>

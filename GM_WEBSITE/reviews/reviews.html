@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="reviewstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/1b4e2f6bd5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../GMLOGOBLACKVER.png" alt="Logo">
+        </div>
+        <ul class="nav-list">
+            <li><a href="..//homepage.html">Home</a></li>
+            <li><a href="../location/location.html">Location</a></li>
+            <li><a href="../Contactus/contactus.html">Contact</a></li>
+            <li><a href="..//Services/services.html">Services</a></li>
+            <li><a href="#">Reviews</a></li>
+        </ul>
+
+       <!-- Burger Icon -->
+       <a class="burger" onclick="toggleSidebar()"><i class='bx bx-menu bx-md'></i></a>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="../homepage.html">HOME</a>
+        <a href="..//location/location.html">LOCATION</a>
+        <a href="..//Contactus/contactus.html">CONTACT</a>
+        <a href="..//Services/services.html" class="services">SERVICES</a>
+        <a href="#">REVIEWS</a>
+
+    </div>
+
+    <section id="testimonials">
+        <!--Heading-->
+            <div class="testimonial-heading">
+                <h1>Reviews</h1>
+            </div>
+
+            <!--Testimonials-box-container-->
+            <div class="testimonial-box-container">
+
+                <!--Box 1-->
+                <div class="testimonial-box">
+                    <!--top-->
+                    <div class="box-top">
+                        <!--profile-->
+                        <div class="profile">
+                            <!--img-->
+                            <div class="profile-img">
+                                <img src="profile2.jpg" alt="">
+                            </div>
+                            <!--name and user-->
+                            <div class="name-use">
+                                <strong>Gelene Maningcay</strong>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!--reviews-->
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                            
+                    </div>
+
+                    <div class="client-comment">
+                        <p>Very accomodating staff. And they will assist you what your needs .</p>
+                    </div>
+                </div>
+
+                <!--Box 2-->
+                <div class="testimonial-box">
+                    <!--top-->
+                    <div class="box-top">
+                        <!--profile-->
+                        <div class="profile">
+                            <!--img-->
+                            <div class="profile-img">
+                                <img src="profile3.jpg" alt="">
+                            </div>
+                            <!--name and user-->
+                            <div class="name-use">
+                                <strong>Marian Grande</strong>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!--reviews-->
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                            
+                    </div>
+
+                    <div class="client-comment">
+                        <p>Their staff are very accommodating and friendly. they also have many package options.</p>
+                    </div>
+                </div>
+
+                <!--Box 3-->
+                <div class="testimonial-box">
+                    <!--top-->
+                    <div class="box-top">
+                        <!--profile-->
+                        <div class="profile">
+                            <!--img-->
+                            <div class="profile-img">
+                                <img src="profile1.jpg" alt="">
+                            </div>
+                            <!--name and user-->
+                            <div class="name-use">
+                                <strong>Karen Aliwalas</strong>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!--reviews-->
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                            
+                    </div>
+
+                    <div class="client-comment">
+                        <p>Super accommodating of those who assisted. kind Kudos!</p>
+                    </div>
+                </div>
+
+                <!--Box 3-->
+                <div class="testimonial-box">
+                    <!--top-->
+                    <div class="box-top">
+                        <!--profile-->
+                        <div class="profile">
+                            <!--img-->
+                            <div class="profile-img">
+                                <img src="profile4.jpg" alt="">
+                            </div>
+                            <!--name and user-->
+                            <div class="name-use">
+                                <strong>Vince Padilla</strong>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!--reviews-->
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                            
+                    </div>
+
+                    <div class="client-comment">
+                        <p>Highly Recommended, maganda at mabilis ang process nila sa Studio Services</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+    </section>
+
+    <script>
+        // Toggle Sidebar
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('show');
+        }
+
+        // If the window is larger the sidebar automatically disabled
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 780) {
+                document.querySelector('.sidebar').classList.remove('show');
+            }
+        });
+    </script>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>FOLLOW US</h2>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/profile.php?id=100071209760725" target="_blank"><img src="../SOCIAL MEDIA ICON/facebook.png" class="footer-icon" alt="Facebook"></a>
+                <a href="#"><img src="../SOCIAL MEDIA ICON/instagram.png" class="footer-icon" alt="Instagram"></a>
+                <a href="#"><img src="../SOCIAL MEDIA ICON/twitter.png" class="footer-icon" alt="Twitter"></a>
+                <a href="#"><img src="../SOCIAL MEDIA ICON/youtube.png" class="footer-icon" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h2>OTHER LINKS</h2>
+            <a href="../Aboutus/aboutus.html">ABOUT US</a>
+            <a href="../faq/faq.html">FAQS</a>
+            <a href="../privacy-policy/privacy-policy.html">PRIVACY POLICY</a>
+            <a href="../TermsandConditions/termsandconditons.html">TERM AND CONDITIONS</a>
+        </div>
+    </div>
+    <div class="footer-text">
+        <p>Copyright © 2024 G.M CAMERA STUDIO PH. All Right Reserved.</p>
+    </div>
+</footer>
+</html>

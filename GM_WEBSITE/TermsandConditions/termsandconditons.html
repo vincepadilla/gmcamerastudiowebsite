@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Terms of Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="termsandconditionstyle.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+        <img src="../GMLOGOBLACKVER.png" alt="Logo">
+    </div>
+    <ul class="nav-list">
+        <li><a href="..//homepage.html">Home</a></li>
+        <li><a href="../location/location.html">Location</a></li>
+        <li><a href="../Contactus/contactus.html">Contact</a></li>
+        <li><a href="..//Services/services.html">Services</a></li>
+        <li><a href="../reviews/reviews.html">Reviews</a></li>
+    </ul>
+
+   <!-- Burger Icon -->
+   <a class="burger" onclick="toggleSidebar()"><i class='bx bx-menu bx-md'></i></a>
+</nav>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <a href="../homepage.html">HOME</a>
+    <a href="..//location/location.html">LOCATION</a>
+    <a href="..//Contactus/contactus.html">CONTACT</a>
+    <a href="..//Services/services.html" class="services">SERVICES</a>
+    <a href="../reviews/reviews.html">REVIEWS</a>
+</div>
+
+<div class="wrapper flex_align_justify">
+  <div class="terms_service">
+      <div class="tc_item tc_head flex_align_justify">
+        <div class="icon flex_align_justify">
+        </div>
+        <div class="text">
+          <h2>TERMS OF SERVICE</h2>
+        </div>
+      </div>
+      <div class="tc_item tc_body">
+        <ol>
+          <li>
+            <h3>Terms of Use</h3>
+            <p>Welcome to G.M Camera Studio Printing and Photography Services. By accessing and using our services, you agree to comply with and be bound by these terms.</p>
+          </li>
+          <li>
+            <h3>Intellectual property rights</h3>
+            <p>All materials, including images, videos, and text produced by G.M Camera Studio, are protected by copyright and intellectual property laws.</p>
+          </li>
+          <li>
+            <h3>Prohibited activities</h3>
+            <p>Users of our services are prohibited from any activities that violate local or international laws, infringe on our intellectual property rights, or misuse our services in any manner.</p>
+          </li>
+          <li>
+            <h3>Termination clause</h3>
+            <p>G.M Camera Studio reserves the right to suspend or terminate access to our services if we detect violations of these terms or suspect misuse.</p>
+          </li>
+          <li>
+            <h3>Governing law</h3>
+            <p>These terms are governed by and construed in accordance with the laws applicable in our jurisdiction. Any disputes arising in connection with these terms shall be subject to the exclusive jurisdiction of local courts.</p>
+          </li>
+        </ol>
+      </div>
+      <!-- Services Section <div class="tc_item tc_foot flex_align">
+          <button class="decline_btn">Decline</button>
+          <button class="accept_btn" onclick="location.href='../index.html'">Accept</button> -->
+
+      </div>
+  </div>
+</div>
+
+<script>
+  function toggleSidebar() {
+      document.querySelector('.sidebar').classList.toggle('show');
+  }
+
+      // If the window is larger the sidebar automatically disabled
+      window.addEventListener('resize', () => {
+          if (window.innerWidth >= 780) {
+              document.querySelector('.sidebar').classList.remove('show');
+          }
+      });
+</script>
+
+</body>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>FOLLOW US</h2>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/profile.php?id=100071209760725" target="_blank"><img src="../SOCIAL MEDIA ICON/facebook.png" class="footer-icon" alt="Facebook"></a>
+                <a href="#"><img src="../SOCIAL MEDIA ICON/instagram.png" class="footer-icon" alt="Instagram"></a>
+                <a href="#"><img src="../SOCIAL MEDIA ICON/twitter.png" class="footer-icon" alt="Twitter"></a>
+                <a href="#"><img src="../SOCIAL MEDIA ICON/youtube.png" class="footer-icon" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h2>OTHER LINKS</h2>
+            <a href="../Aboutus/aboutus.html">ABOUT US</a>
+            <a href="../faq/faq.html">FAQS</a>
+            <a href="../privacy-policy/privacy-policy.html">PRIVACY POLICY</a>
+            <a href="#">TERM AND CONDITIONS</a>
+        </div>
+    </div>
+    <div class="footer-text">
+        <p>Copyright © 2024 G.M CAMERA STUDIO PH. All Right Reserved.</p>
+    </div>
+  </footer>
+</html>
